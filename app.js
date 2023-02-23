@@ -12,7 +12,7 @@ app.use(express.static("public"));
 
 mongoose.connect("mongodb+srv://Suvigya:VikingBomber11@cluster0.nt3tnhe.mongodb.net/todolistDB", { useNewUrlParser: true });
 
-const itemsSchema = {
+const itemsSchema = new mongoose.Schema({
     name: String
 };
 
